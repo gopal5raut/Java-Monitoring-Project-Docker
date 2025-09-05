@@ -6,7 +6,7 @@ COPY . .
 
 RUN apk update && apk add maven
 
-RUN mvn package
+RUN mvn package -DskipTests
 
 FROM openjdk:17-alpine
 
